@@ -36,7 +36,9 @@ def create_status_response():
 def create_pong_response(ping_payload):
     # Pong packet (followed by the same ping payload)
     packet_id = encode_varint(0x01)
-    return packet_id + ping_payload
+    packet_data = packet_id + ping_payload
+    packet_length = encode_varint(len(packet_data))
+    return packet_length + packet_data
 
 
 # Kick Player
