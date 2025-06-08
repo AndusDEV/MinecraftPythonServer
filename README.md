@@ -5,11 +5,10 @@ This is my take on creating a (partial) implementation of the Minecraft Protocol
 > This won't be a full Minecraft Vanilla reimplementation. It's just a fun side-project to see how far can I take it.
 
 ## What works now:
-- [ ] Server List:
+- [x] Server List:
   - [x] Server Description
   - [x] (Fake) Minimum/Maximum Players
-  - [ ] Ping (ms)
-    - Shows "Pinging..." forever
+  - [x] Ping (ms)
 - [ ] Connecting to the server:
   - [x] Getting Player State (HANDSHAKE, STATUS, LOGIN, etc.)
   - [x] When player joins a server, they're immediately kicked
